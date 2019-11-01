@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Beep-Boop</title>
-  </head>
-  <body>
-    <div class="container">
-      <form id="beep-boop">
-        <h1>Beep-Boop</h1>
-        <input type="text" id="input" value="">
-        <button type="submit" name="button">Submit</button>
-
-      </form>
-      <div id="result">
-
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Beep-Boop!</title>
+</head>
+<body>
+  <div class="container">
+    <form id="beep-boop">
+      <h1>Beep-Boop!</h1>
+      <div class="form-group">
+        <label for="name">What is you're name?</label>
+        <input type="text" id="nameInput">
       </div>
+      <div class="form-group">
+        <label for="numberInput">Give me a number!</label>
+        <input type="text" id="numberInput">
+      </div>
+      <button type="submit" name="button">Submit</button>
+
+    </form>
+    <div id="result">
+
     </div>
-  </body>
+  </div>
+</body>
 </html>

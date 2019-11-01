@@ -2,8 +2,10 @@ $(document).ready(function(){
   $("#beep-boop").submit(function(event){
     event.preventDefault();
 
-    var userInput = $("input#input").val();
+    var userNumber = $("input#numberInput").val();
+    var userName = $("input#nameInput").val();
 
-    $("#result").text(userInput);
+    $("#result").append(userName)
+    $("#result").append(userNumber);
   });
 });
