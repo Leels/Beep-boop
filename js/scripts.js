@@ -1,10 +1,11 @@
 //Back-end logic//
 function beepBoop(userNumber) {
   var inputArray = []
+  var userName = $("input#nameInput").val();
 
   for (var i = 0; i <= userNumber; i ++) {
     if ([i].toString().includes(3)) {
-    inputArray.push("I'm sorry, Dave. I'm afraid I can't do that. ")
+    inputArray.push("I'm sorry, " + userName + ". I'm afraid I can't do that. ")
     } else if ([i].toString().includes(2)) {
     inputArray.push("Boop! ")
     } else if
@@ -27,7 +28,7 @@ $(document).ready(function(){
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
 
-    $("#result").text(userName)
+
     $("#result").append(result);
   });
 });
