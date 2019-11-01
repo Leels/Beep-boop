@@ -30,5 +30,7 @@ $(document).ready(function(){
 
     $("#questions").hide();
     $("#result").append(result);
+
+    document.getElementById("beep-boop").reset();
   });
 });

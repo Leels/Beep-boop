@@ -2,6 +2,10 @@ body {
 background-color: #e6f2ff;
 }
 
+.page2 {
+  display: none;
+}
+
 h1 {
   text-align: center;
   padding: 10%;
