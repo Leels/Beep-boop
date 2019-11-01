@@ -9,7 +9,7 @@
 
 ## GitHub Pages link
 
-  [Visit Coding Language Suggester](http://leels.github.io/Beep-boop/)
+  [Visit Beep-Boop](http://leels.github.io/Beep-boop/)
 
 ### Known Bugs
 #### None
