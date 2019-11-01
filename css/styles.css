@@ -1,5 +1,11 @@
+body {
+background-color: #e6f2ff;
+}
+
 h1 {
   text-align: center;
+  padding: 10%;
+  font-size: 400%
 }
 
 img {
@@ -8,29 +14,33 @@ img {
   margin-right: auto;
   width: 50%;
   padding-bottom: 5%;
-  padding-top: 2%;
-
-
+  padding-top: 5%;
 }
 
-.speech {
-  position: relative;
-  font-family: arial;
-  font-size: 1.1em;
-  background: #a53d38;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 400px;
+button {
+  float: right;
+  margin-top: 4%
 }
 
-.speech:after {
-  content: '';
-  border: 20px solid transparent;
-  border-top-color: #a53d38;
-  border-bottom: 0;
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  margin-left: -20px;
+.speech-bubble {
+	position: relative;
+	background: #9d0000;
+	border-radius: .4em;
+  color: white;
+  padding: 3%
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #9d0000;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }
