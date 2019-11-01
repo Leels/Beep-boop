@@ -1,10 +1,12 @@
 //Back-end logic//
-function beepBoop(number) {
-  var newArray = []
-  for (var i = 0; i <= number; index ++) {
-
-
+function beepBoop(userNumber) {
+  var inputArray = []
+  for (var i = 0; i <= userNumber; i ++) {
+    if (i = 1) {
+      inputArray.push("Beep!")
+    }
   }
+  return inputArray;
 }
 
 
@@ -15,8 +17,9 @@ $(document).ready(function(){
 
     var userName = $("input#nameInput").val();
     var userNumber = parseInt($("input#numberInput").val());
+    var result = beepBoop(userNumber);
 
     $("#result").text(userName)
-    $("#result").append(userNumber);
+    $("#result").append(result);
   });
 });
