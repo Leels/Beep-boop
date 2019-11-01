@@ -1,11 +1,16 @@
 //Back-end logic//
 function beepBoop(userNumber) {
   var inputArray = []
+
   for (var i = 0; i <= userNumber; i ++) {
-    if ([i].includes(1)) {
+    if ([i].toString().includes(3)) {
+    inputArray.push("I'm sorry, Dave. I'm afraid I can't do that. ")
+    } else if ([i].toString().includes(2)) {
+    inputArray.push("Boop! ")
+    } else if
+      ([i].toString().includes(1)) {
       inputArray.push("Beep! ")
-    }
-    else {
+    } else {
       inputArray.push(i + ", ");
     }
   }
