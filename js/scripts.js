@@ -28,7 +28,7 @@ $(document).ready(function(){
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
 
-
+    $("#questions").hide();
     $("#result").append(result);
   });
 });
