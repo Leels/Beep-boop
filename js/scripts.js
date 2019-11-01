@@ -2,8 +2,11 @@
 function beepBoop(userNumber) {
   var inputArray = []
   for (var i = 0; i <= userNumber; i ++) {
-    if (i = 1) {
-      inputArray.push("Beep!")
+    if ([i].includes(1)) {
+      inputArray.push("Beep! ")
+    }
+    else {
+      inputArray.push(i + ", ");
     }
   }
   return inputArray;
