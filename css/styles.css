@@ -9,7 +9,19 @@ background-color: #e6f2ff;
 h1 {
   text-align: center;
   padding: 10%;
-  font-size: 400%
+  font-size: 450%;
+}
+
+label {
+  font-family: courier;
+  font-size: 150%;
+}
+
+#result {
+  font-family: courier;
+  font-size: 150%;
+}
+
 }
 
 img {

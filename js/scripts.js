@@ -28,7 +28,7 @@ $(document).ready(function(){
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
 
-    $("#questions").hide();
+    $("#page1").hide();
     $("#result").append(result);
 
     document.getElementById("beep-boop").reset();
