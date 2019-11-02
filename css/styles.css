@@ -18,7 +18,7 @@ background-color: #e6f2ff;
     transform: scale(1);
   }
 }
-.container {
+#beep-boop {
   animation-duration: 2s;
   animation-name: bounceIn;
 }
