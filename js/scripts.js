@@ -1,13 +1,15 @@
 //Back-end logic//
 function beepBoop(userNumber) {
   var inputArray = []
+
+  //I know that this variable is front-end logic but I wasn't exactly sure how to access it without putting all the logic under the submit function.//
   var userName = $("input#nameInput").val();
 
   for (var i = 0; i <= userNumber; i ++) {
     if ([i].toString().includes(3)) {
-    inputArray.push("I'm sorry, " + userName + ". I'm afraid I can't do that. ")
+      inputArray.push("I'm sorry, " + userName + ". I'm afraid I can't do that. ")
     } else if ([i].toString().includes(2)) {
-    inputArray.push("Boop! ")
+      inputArray.push("Boop! ")
     } else if
       ([i].toString().includes(1)) {
       inputArray.push("Beep! ")
@@ -32,7 +34,5 @@ $(document).ready(function(){
     $(".page2").show();
     $("#result").append(result);
 
-
-    document.getElementById("beep-boop").reset();
   });
 });
