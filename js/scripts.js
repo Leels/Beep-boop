@@ -19,10 +19,12 @@ function beepBoop(userNumber) {
   }
   return inputArray;
 }
+
+//reset css animation//
 function reset_animation() {
   var el = document.getElementById('beep-boop');
   el.style.animation = 'none';
-  el.offsetHeight; /* trigger reflow */
+  el.offsetHeight;
   el.style.animation = null;
 }
 
@@ -34,10 +36,12 @@ $(document).ready(function(){
     var userName = $("input#nameInput").val();
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
+    // var countDown = result.reverse();
 
     $(".page1").hide();
     $(".page2").show();
     $("#result").append(result);
+    $("#countDown").append(result.reverse());
 
   });
 });
