@@ -19,7 +19,12 @@ function beepBoop(userNumber) {
   }
   return inputArray;
 }
-
+function reset_animation() {
+  var el = document.getElementById('beep-boop');
+  el.style.animation = 'none';
+  el.offsetHeight; /* trigger reflow */
+  el.style.animation = null;
+}
 
 //Front-end logic//
 $(document).ready(function(){
