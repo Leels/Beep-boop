@@ -32,9 +32,6 @@ $(document).ready(function(){
     $(".page2").show();
     $("#result").append(result);
 
-    // $(".clickable").click(function(){
-    // $(".page1").toggle();
-    // $(".page2").toggle();
 
     document.getElementById("beep-boop").reset();
   });
