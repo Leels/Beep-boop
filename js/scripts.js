@@ -28,8 +28,13 @@ $(document).ready(function(){
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
 
-    $("#page1").hide();
+    $(".page1").hide();
+    $(".page2").show();
     $("#result").append(result);
+
+    // $(".clickable").click(function(){
+    // $(".page1").toggle();
+    // $(".page2").toggle();
 
     document.getElementById("beep-boop").reset();
   });

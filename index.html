@@ -12,10 +12,10 @@
     <h1>Beep-Boop!</h1>
     <form id="beep-boop">
       <div class="speech-bubble">
-        <div id="page1">
+        <div class="page1">
           <div class="form-group">
             <label for="name">Hello, human. What is your name?</label>
-            <input type="text" id="nameInput">
+            <input type="text" id="nameInput" name="name">
           </div>
           <div class="form-group">
             <label for="numberInput">Give me a number:</label>
@@ -26,7 +26,12 @@
 
         </div>
       </div>
+      <div class="page1 clickable">
       <button type="submit" name="button">Let's go!</button>
+    </div>
+      <div class="page2 clickable">
+      <button type="reset" name="button" value="Reset" onClick="window.location.reload()">Try Again</button>
+    </div>
     </form>
     <img src="images/robot.png" alt="robot">
   </div>
