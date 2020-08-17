@@ -2,9 +2,6 @@
 function beepBoop(userNumber) {
   var inputArray = []
 
-  //I know that this variable is front-end logic but I wasn't exactly sure how to access it without putting all the logic under the submit function.//
-  var userName = $("input#nameInput").val();
-
   for (var i = 0; i <= userNumber; i ++) {
     if ([i].toString().includes(3)) {
       inputArray.push("I'm sorry, " + userName + ". I'm afraid I can't do that. ")
