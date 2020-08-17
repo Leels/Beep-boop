@@ -1,5 +1,7 @@
 //Back-end logic//
 function beepBoop(userNumber) {
+
+  var userName = $("input#nameInput").val();
   var inputArray = []
 
   for (var i = 0; i <= userNumber; i ++) {
@@ -28,7 +30,6 @@ $(document).ready(function(){
   $("#beep-boop").submit(function(event){
     event.preventDefault();
 
-    var userName = $("input#nameInput").val();
     var userNumber = parseInt($("input#numberInput").val());
     var result = beepBoop(userNumber);
 
